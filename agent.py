@@ -15,7 +15,7 @@ class Agent:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
-                elif event.type == pygame.KEYDOWN:
+                if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_LEFT:  # Left arrow
                         action  = "left"
                         running = False
